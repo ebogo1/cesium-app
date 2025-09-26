@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "@esri/arcgis-rest-feature-service": "^4.4.0",
+    "@esri/arcgis-rest-request": "^4.7.3",
     "cesium": "^1.133.1",
     "copy-webpack-plugin": "^13.0.1",
     "css-loader": "^7.1.2",
