@@ -53,7 +53,7 @@ osmBuildingsTileset.style = new Cesium3DTileStyle({
         "${feature['building']} === 'apartments' || ${feature['building']} === 'residential'",
         "color('DEEPSKYBLUE', 1.0)",
       ],
-      [true, "color('WHITE')"],
+      [true, "color('BLANCHEDALMOND')"]
     ],
   },
 });
@@ -71,7 +71,7 @@ queryFeatures({
 }).then((response) => {
   GeoJsonDataSource.load(response, {
     clampToGround:true,
-    strokeWidth: 5,
+    strokeWidth: 3,
     // Attribution text retrieved from https://arcgis.com/home/item.html?id=2d6faae4a1064df8b37383bad3a1ea75
     credit: new Credit("New York City Department of Transportation", false)
   }).then((data) => {
